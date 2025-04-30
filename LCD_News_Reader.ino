@@ -9,7 +9,13 @@
 #include <LiquidCrystal.h>
 
 // set up pins on Arduino for LCD and test lead
-LiquidCrystal lcd(12,11,5,4,3,2);
+int rs=7;
+int en=8;
+int d4=9;
+int d5=10;
+int d6=11;
+int d7=12;
+LiquidCrystal lcd(rs,en,d4,d5,d6,d7);
 
 
 // set up the LCD's number of columns and rows
